@@ -72,6 +72,8 @@ export class AuthService {
     this.token = '';
     this.payload = null;
     this.set_jwt();
+    sessionStorage.clear();
+    localStorage.clear();
   }
 
   can(permission: string) {
